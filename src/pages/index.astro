@@ -5,11 +5,60 @@ import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
 ---
-<MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
-	</article>
+<MainLayout title="Welcome">
+	<!-- <main class="bg-gradient-to-b from-pink-500 via-purple-500 to-blue-500"> -->
+	<section class="container mx-auto">
+		<div class="text-lime-950 font-extrabold text-8xl mb-10">
+			<h1>Digital design that matters.</h1>
+		</div>
+		<div class="grid grid-cols-12">
+			<div class="col-start-1 col-end-7">
+				<h2 class="text-lime-950 font-extrabold text-5xl">About me</h2>
+				<p class="text-lime-950 text-2xl">My name is Viola, and I am currently studying Multimedia Design at KEA. I have always loved being creative, whether through drawing, DIY projects, or exploring new ideas—and over time, I discovered my passion for digital design solutions. </p>
+				<p class="text-lime-950 text-2xl">Through my studies, I’ve learned that great design is not only about aesthetics, but also about understanding the user’s journey. I enjoy exploring creative ideas and developing visual solutions that balance imagination with function, always focusing on the user.</p>
+				<p class="text-lime-950 text-2xl">For me, aesthetics, functionality, and usability go hand in hand to create inspiring and intuitive experiences.</p>
+			</div>
+			<div>
+				<img src="" alt="">
+			</div>
+		</div>
+	</section >
+	<section class="container mx-auto">
+		<div>
+			<h2 class="text-lime-950 font-extrabold text-5xl">Skills</h2>
+			<div class="text-lime-950 text-2xl">
+				<p>Organized</p>
+				<p>Detail Orientated</p>
+				<p>Concientious</p>
+				<p>Teamwork</p>
+			</div>
+		</div>
+		<div>
+			<h2 class="text-lime-950 font-extrabold text-5xl">Software</h2>
+			<img src="/ai_icon2.webp" alt="">
+			<img src="/pr_icon.webp" alt="">
+			<img src="/ps_icon.webp" alt="">
+			<img src="/figma_icon.webp" alt="">
+		</div>
+	</section>
+	<section class="container mx-auto">
+		<div>
+			<h2 class="text-lime-950 font-extrabold text-5xl">Get in touch</h2>
+		</div>
+		<div>
+			<div>
+				<img src="" alt="">
+				<a href=""></a>
+			</div>
+			<div>
+				<img src="" alt="">
+				<a href=""></a>
+			</div>
+			<div>
+				<img src="" alt="">
+				<a href=""></a>
+			</div>
+		</div>
+	</section>
+	<!-- </main> -->
 </MainLayout>
