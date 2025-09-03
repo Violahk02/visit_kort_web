@@ -7,6 +7,10 @@
 
 @theme {
   /* Her tilføjes theme variable // tokens */
+
+  --color-pink-100: #FFCBD0;
+  --color-lime-200: #D8DF80;
+  --color-green-900: #2D371D;
 }
 
 @layer base {
@@ -23,5 +27,16 @@
 
 }
 @layer utilities{
-  
+  .border-white-50 {
+    border: 1px solid hsl(0, 0%, 100%, 0.5);
+  }
+  .backdrop-blur{
+    backdrop-filter: blur(2px);
+  }
+  .box-shadow{
+    box-shadow: inset 0 0 8px 1px hsl(0, 0%, 100%, 0.3);
+  }
+  .shadow-hard {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+  }
 }
